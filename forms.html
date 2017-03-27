@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+</head>
+<body>
+    <p><strong>Привіт!</strong></p>
+    <p>Виділіть декілька хвилин <strong>Bашого</strong> часу та заповніть <em>форму</em>!</p>
+    <h2>Анкета відвідувача ресторану</h2>
+    <form method="post" action="https://formspree.io/v.katsma@gmail.com">
+       <fieldset>
+           <legend><h3>Контактна інформація</h3></legend>
+               <label>Ваше ім'я:
+                   <input type="text" name="name" placeholder="Ім'я" required>
+                </label>
+                <br>
+                <label>Телефон:
+                   <input type="number" name="phonenumber" placeholder="380000000000">
+                </label>
+                <br>
+                <label>Email:
+                   <input type="email" name="email" placeholder="vkatsma@gmail.com" required>
+                </label>
+                <br>
+                <label>Дата відвідування:
+                   <input type="date" name="date" required>
+                </label>
+        </fieldset>
+        <fieldset>
+            <legend><h3>Персональна інвормація</h3></legend>
+                <label>Стать:
+                   <input type="radio" name="sex" value="Male">Чоловіча
+                   <input type="radio" name="sex" value="Female">Жіноча
+                </label>
+                <br>
+                <label>Вік:
+                   <input type="number" name="age" placeholder="yourage" min="1" max="100">
+                </label>
+                <br>
+                <label>Улюблена кухня:
+                   <select>
+                       <option>Українаська</option>
+                       <option>Італійська</option>
+                       <option>Французька</option>
+                       <option>Японська</option>
+                       <option>Китайська</option>
+                       <option>Грузинська</option>
+                   </select>
+                </label>
+                <br> 
+                <label>Які страви Ви хотіли б побачити в меню:
+                   <textarea placeholder="Ваші побажання"></textarea>
+                </label>
+       </fieldset>
+       <fieldset>
+           <legend><h3>Оцінка нашого закладу</h3></legend>
+               <label>Чому ви вибрали наш заклад?
+                   <input type="radio" name="yourchioce">Недалеко від дому/роботи
+                   <input type="radio" name="yourchioce">Побачили рекламу
+                   <input type="radio" name="yourchioce">Порадили
+                   <input type="radio" name="yourchioce">Оптимальне співвідношення ціна/якість
+               </label>
+               <br>
+               <label>Ви будете рекомендувати наш заклад друзям?
+                    <input type="radio" name="recomendation" value="yes">Так
+                    <input type="radio" name="recomendation" value="no">Ні
+               </label>
+       </fieldset>
+       <input type="submit" value="Надіслати">
+       <input type="Reset" value="Скинути все">
+   </form>
+   <p><strong>Дякуємо за Ваші відповіді! Гарного дня!</strong></p>
+</body>
+</html>
