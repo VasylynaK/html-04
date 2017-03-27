@@ -33,8 +33,12 @@
         <fieldset>
             <legend><h3>Персональна інвормація</h3></legend>
                 <label>Стать:
-                   <input type="radio" name="sex" value="Male">Чоловіча
-                   <input type="radio" name="sex" value="Female">Жіноча
+                   <label>
+                       <input type="radio" name="sex" value="Male">Чоловіча
+                   </label>
+                   <label>
+                       <input type="radio" name="sex" value="Female">Жіноча
+                   </label>
                 </label>
                 <br>
                 <br>
@@ -45,33 +49,39 @@
                 <br>
                 <label>Улюблена кухня:
                    <select>
-                       <option>Українаська</option>
-                       <option>Італійська</option>
-                       <option>Французька</option>
-                       <option>Японська</option>
-                       <option>Китайська</option>
-                       <option>Грузинська</option>
+                       <option value="ukrainian">Українська</option>
+                       <option value="italian">Італійська</option>
+                       <optionvalue="franch">Французька</option>
+                       <option value="japanese">Японська</option>
+                       <option value="сhinese">Китайська</option>
+                       <option value="georgian">Грузинська</option>
                    </select>
                 </label>
                 <br> 
                 <br>
                 <label>Які страви Ви хотіли б побачити в меню:
-                   <textarea placeholder="Ваші побажання"></textarea>
+                   <textarea name="coment" placeholder="Ваші побажання"></textarea>
                 </label>
        </fieldset>
        <fieldset>
            <legend><h3>Оцінка нашого закладу</h3></legend>
-               <label>Чому ви вибрали наш заклад?
-                   <input type="radio" name="yourchioce">Недалеко від дому/роботи
-                   <input type="radio" name="yourchioce">Побачили рекламу
-                   <input type="radio" name="yourchioce">Порадили
-                   <input type="radio" name="yourchioce">Оптимальне співвідношення ціна/якість
-               </label>
+               <label>Чому ви вибрали наш заклад?</label>
+                   <label>
+                       <input type="radio" name="userchioce" value="next to home">Недалеко від дому/роботи
+                   </label>
+                   <label>
+                       <input type="radio" name="userchioce" value="saw a promotion">Побачили рекламу
+                   </label>
+                   <label>
+                       <input type="radio" name="userchioce" value="recomendation">Порадили
+                   </label>
+                   <label>
+                       <input type="radio" name="userchioce" value="best price/quality">Оптимальне співвідношення ціна/якість
+                   </label>
                <br>
-               <label>Ви будете рекомендувати наш заклад друзям?
-                    <input type="radio" name="recomendation" value="yes">Так
-                    <input type="radio" name="recomendation" value="no">Ні
-               </label>
+               <label>Ви будете рекомендувати наш заклад друзям?</label>
+                    <label><input type="radio" name="recomendation" value="yes">Так</label>
+                    <label><input type="radio" name="recomendation" value="no">Ні</label>
        </fieldset>
        <input type="submit" value="Надіслати">
        <input type="Reset" value="Скинути все">
